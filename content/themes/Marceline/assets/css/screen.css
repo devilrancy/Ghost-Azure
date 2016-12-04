@@ -539,7 +539,7 @@ img {
    3. General
    ========================================================================== */
 .masthead {
-  background: rgba(130,207,208,0.6) url("../img/header.jpg") repeat-y;
+  background: #2c3e50;
   width: 30%;
   max-height: 100%;
   text-align: center;
@@ -554,7 +554,7 @@ img {
   display: inline-block;
   height: 3px;
   width: 30%;
-  background: #000;
+  background: #ecf0f1;
 }
 .masthead .header-wrapper .logo {
   margin: 0;
@@ -605,7 +605,7 @@ img {
   bottom: 8px;
 }
 .masthead .header-wrapper .bottom .menu li a {
-  color: #000;
+  color: #ecf0f1;
   font-size: 2.4rem;
   position: relative;
   bottom: 0;
