@@ -18,7 +18,9 @@
     {{ghost_head}}
   </head>
   <body class="{{body_class}}">
-
+    {{#if @blog.navigation}}
+        {{navigation}}
+    {{/if}}
     {{{body}}}
 
     {{ghost_foot}}
