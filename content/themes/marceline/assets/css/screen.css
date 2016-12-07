@@ -200,7 +200,7 @@ html {
   transition: font-size 0.35s ease-in;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   color: #000;
 }
 h1,
@@ -539,7 +539,8 @@ img {
    3. General
    ========================================================================== */
 .masthead {
-  background: #ecf0f1;
+  background: rgba(34,49,63,1) url("../img/header.jpg") repeat-y;
+  /*background: #262B30 repeat-y;*/
   width: 30%;
   max-height: 100%;
   text-align: center;
@@ -554,13 +555,14 @@ img {
   display: inline-block;
   height: 3px;
   width: 30%;
-  background: #000;
+  background: #fff;
 }
 .masthead .header-wrapper .logo {
-  margin: 0;
+  border-radius: 50%;
+  overflow: hidden;
   display: inline-block;
-  width: 15.6rem;
-  height: auto;
+  width: 11.6rem;
+  height: 11.6rem;
 }
 .masthead .header-wrapper .logo a img {
   width: 100%;
@@ -569,6 +571,19 @@ img {
 .masthead .header-wrapper .logo + .title {
   position: initial;
 }
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+.round img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 .masthead .header-wrapper .title a {
   position: relative;
   top: 50%;
@@ -578,12 +593,14 @@ img {
   margin: 1rem 0 0.15rem 0;
   font-weight: 900;
   padding: 0 0.5rem;
+  color: #49ADAD
 }
 .masthead .header-wrapper .title p {
   font-size: 1.2rem;
   margin: 0;
   font-weight: 400;
   padding: 0 0.5rem;
+  color: #fff
 }
 .masthead .header-wrapper .bottom {
   position: absolute;
@@ -603,7 +620,7 @@ img {
   bottom: 8px;
 }
 .masthead .header-wrapper .bottom .menu li a {
-  color: #000;
+  color: #fff;
   font-size: 2.4rem;
   position: relative;
   bottom: 0;
@@ -612,6 +629,19 @@ img {
 .masthead .header-wrapper .bottom .menu li:nth-child(2) {
   margin: 0 1.7rem;
 }
+
+/* commented icon colors
+.fa-twitter {
+  color: #28A9E0;
+}
+.fa-github {
+  color: #bdc3c7;
+}
+.fa-instagram {
+  color: #e74c3c;
+}
+*/
+
 /* ==========================================================================
    4. Post
    ========================================================================== */
@@ -737,7 +767,6 @@ img {
   color: #bdc3c7;
 }
 .container .post .footer-post .author-post .bio .author-name {
-  text-transform: uppercase;
   font-weight: 900;
   margin: 10px 0 8px 0;
 }
@@ -756,7 +785,6 @@ img {
   margin-top: 30px;
 }
 .container .post .footer-post .share h4 {
-  text-transform: uppercase;
   font-weight: 900;
   font-size: 1.3rem;
   color: #000;
